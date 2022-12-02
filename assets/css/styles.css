@@ -50,7 +50,9 @@ footer {
   display: flex;
   justify-content: center;
 }
-.footer p {
+footer p {
+  /* padding-top: 1rem;
+  padding-bottom: 2rem; */
   padding: 2rem;
 }
 .grid-container__principal {
