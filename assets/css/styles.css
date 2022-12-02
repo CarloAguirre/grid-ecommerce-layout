@@ -1,8 +1,8 @@
-:root{
-    --font-tittle: 'Permanent Marker', cursive;
-    --font-secondary: 'Kalam', cursive;
+:root {
+  --font-tittle: "Permanent Marker", cursive;
+  --font-secondary: "Kalam", cursive;
 }
-nav{
+nav {
   grid-area: nav;
   max-height: 10vh;
   background-color: #212529;
@@ -12,7 +12,7 @@ nav{
   font-family: var(--font-tittle);
 }
 
-aside{
+aside {
   grid-area: aside;
   max-width: 20vw;
   min-width: 10rem;
@@ -23,9 +23,9 @@ aside{
   color: rgb(218, 224, 229);
   font-family: var(--font-secondary);
 }
-aside p:hover{
-    transform: scale(1.01);
-    cursor: pointer;
+aside p:hover {
+  transform: scale(1.01);
+  cursor: pointer;
 }
 main {
   grid-area: main;
@@ -37,110 +37,121 @@ main {
   margin: 4rem;
   font-family: var(--font-secondary);
   grid-template-areas:
-  "img1 img2 img3"
-  "img4 img5 img6";
+    "img1 img2 img3"
+    "img4 img5 img6";
 }
-footer{
+footer {
   grid-area: footer;
   max-height: 10vh;
-  background-color:#212529;
+  background-color: #212529;
   font-size: large;
   font-weight: 500;
   color: rgb(218, 224, 229);
   display: flex;
   justify-content: center;
 }
-.footer p{
-    padding: 2rem;
+.footer p {
+  padding: 2rem;
 }
 .grid-container__principal {
-    display: grid;
-    min-height: 100vh;
-    min-width: 100vw;
-    background-color: #c84614;
-    grid-template-areas: 
+  display: grid;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: #c84614;
+  grid-template-areas:
     "nav nav"
     "aside main"
     "footer footer";
-  }
-
-.producto-1, .producto-2, .producto-3, .producto-4, .producto-5{
-    display: flex;
-    flex-direction: column;
-    background-position: center;
-    background-color: antiquewhite;
-    border-radius: 5%;
-    padding-bottom: 2rem;
 }
 
-.producto-1{
-    grid-area: img1;
-}
-.producto-2{
-    grid-area: img2;
-}
-.producto-3{
-    grid-area: img3;
-}
-.producto-4{
-    grid-area: img4;
-}
-.producto-5{
-    grid-area: img5;
+.producto-1,
+.producto-2,
+.producto-3,
+.producto-4,
+.producto-5 {
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+  background-color: antiquewhite;
+  border-radius: 5%;
+  padding-bottom: 2rem;
 }
 
-.img-1, .img-2, .img-3, .img-4, .img-5{
-    background-size: cover;
-    background-position: center;
-    height: 35vh;
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
+.producto-1 {
+  grid-area: img1;
+}
+.producto-2 {
+  grid-area: img2;
+}
+.producto-3 {
+  grid-area: img3;
+}
+.producto-4 {
+  grid-area: img4;
+}
+.producto-5 {
+  grid-area: img5;
 }
 
-.img-1{
-    background-image: url(/assets/imgs/1.jpg);
-}
-.img-2{
-    background-image: url(/assets/imgs/7.jpg);
-}
-.img-3{
-    background-image: url(/assets/imgs/3.jpg);
-}
-.img-4{
-    background-image: url(/assets/imgs/4.jpg);
-}
-.img-5{
-    background-image: url(/assets/imgs/9.jpg);
+.img-1,
+.img-2,
+.img-3,
+.img-4,
+.img-5 {
+  background-size: cover;
+  background-position: center;
+  height: 35vh;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
 }
 
-.producto-1 button, .producto-2 button, .producto-3 button, .producto-4 button, .producto-5 button{
-    border-radius: 30%;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-    background-color: #515152;
-    padding: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    border: none;
-    color: aliceblue;
-    font-size: larger;
-    font-weight: 900;
+.img-1 {
+  background-image: url(/assets/imgs/1.jpg);
 }
-button{
-    transition: 0.1s;
+.img-2 {
+  background-image: url(/assets/imgs/7.jpg);
 }
-button:hover{
-    transform: scale(1.02);
-    background-color: #454548;
+.img-3 {
+  background-image: url(/assets/imgs/3.jpg);
+}
+.img-4 {
+  background-image: url(/assets/imgs/4.jpg);
+}
+.img-5 {
+  background-image: url(/assets/imgs/9.jpg);
 }
 
-.titulo-producto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.producto-1 button,
+.producto-2 button,
+.producto-3 button,
+.producto-4 button,
+.producto-5 button {
+  border-radius: 30%;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  background-color: #515152;
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border: none;
+  color: aliceblue;
+  font-size: larger;
+  font-weight: 900;
 }
-h3{
-    color: #454548;
-    font-size: x-large;   
+button {
+  transition: 0.1s;
+}
+button:hover {
+  transform: scale(1.02);
+  background-color: #454548;
 }
 
+.titulo-producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h3 {
+  color: #454548;
+  font-size: x-large;
+}
