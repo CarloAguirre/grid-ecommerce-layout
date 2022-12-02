@@ -137,8 +137,6 @@ footer p {
   color: aliceblue;
   font-size: larger;
   font-weight: 900;
-}
-button {
   transition: 0.1s;
 }
 button:hover {
