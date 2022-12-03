@@ -14,8 +14,7 @@ nav {
 
 aside {
   grid-area: aside;
-  max-width: 20vw;
-  min-width: 10rem;
+  min-width: 6rem;
   background-color: #454548;
   padding: 1rem;
   font-size: large;
@@ -29,7 +28,6 @@ aside p:hover {
 }
 main {
   grid-area: main;
-  min-width: 80vw;
   min-height: 80vh;
   display: grid;
   column-gap: 2rem;
@@ -55,6 +53,7 @@ footer p {
 }
 .grid-container__principal {
   display: grid;
+  grid-template-columns: 10% 90%;
   min-height: 100vh;
   min-width: 100vw;
   background-color: #c84614;
@@ -165,4 +164,21 @@ h3 {
   -moz-box-shadow: 10px 2px 18px 1px rgba(0,0,0,0.75);
   box-shadow: 10px 2px 18px 1px rgba(0,0,0,0.75);
   
+}
+
+@media (max-width: 1000px){
+  main {
+    grid-area: main;
+    justify-content: end;
+    grid-template-areas:
+      "img1"
+      "img2"
+      "img3"
+      "img4"
+      "img5"
+      "img6";
+  }
+  .producto-1{
+    min-width: 60vw;
+  }
 }
