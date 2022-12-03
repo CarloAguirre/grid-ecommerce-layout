@@ -105,19 +105,19 @@ footer p {
 }
 
 .img-1 {
-  background-image: url(/assets/imgs/1.jpg);
+  background-image: url(../imgs/1.jpg);
 }
 .img-2 {
-  background-image: url(/assets/imgs/7.jpg);
+  background-image: url(../imgs/7.jpg);
 }
 .img-3 {
-  background-image: url(/assets/imgs/3.jpg);
+  background-image: url(../imgs/3.jpg);
 }
 .img-4 {
-  background-image: url(/assets/imgs/4.jpg);
+  background-image: url(../imgs/4.jpg);
 }
 .img-5 {
-  background-image: url(/assets/imgs/9.jpg);
+  background-image: url(../imgs/9.jpg);
 }
 
 .producto-1 button,
