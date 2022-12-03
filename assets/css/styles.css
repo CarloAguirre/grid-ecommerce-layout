@@ -2,6 +2,10 @@
   --font-tittle: "Permanent Marker", cursive;
   --font-secondary: "Kalam", cursive;
 }
+*, html{
+  margin: 0;
+  padding: 0;
+}
 nav {
   grid-area: nav;
   max-height: 10vh;
@@ -28,7 +32,7 @@ aside p:hover {
 }
 main {
   grid-area: main;
-  min-height: 80vh;
+  min-height: 75vh;
   display: grid;
   column-gap: 2rem;
   row-gap: 2rem;
@@ -40,12 +44,13 @@ main {
 }
 footer {
   grid-area: footer;
-  max-height: 10vh;
+  max-height: 15vh;
   background-color: #212529;
   font-size: large;
   font-weight: 500;
   color: rgb(218, 224, 229);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -204,4 +209,16 @@ h3 {
     display: flex;
     flex-direction: row;
   }
+}
+.social-links1, .social-links2{
+  color: rgb(255, 255, 255);
+  margin-top: -2rem;
+  margin-bottom: 1rem;
+}
+.social-links2{
+  margin-left: 1.5rem;
+}
+.social-links2:hover, .social-links1:hover{
+  color: aliceblue;
+  transform: scale(1.05);
 }
