@@ -56,7 +56,6 @@ footer p {
   display: grid;
   grid-template-columns: 10% 90%;
   min-height: 100vh;
-  min-width: 100vw;
   background-color: #c84614;
   grid-template-areas:
     "nav nav"
@@ -170,7 +169,7 @@ h3 {
 @media (max-width: 1000px){
   main {
     grid-area: main;
-    justify-content: end;
+    justify-content: center;
     grid-template-areas:
       "img1"
       "img2"
@@ -181,5 +180,28 @@ h3 {
   }
   .producto-1{
     min-width: 60vw;
+  }
+}
+@media (max-width: 700px ){
+  .grid-container__principal {
+    grid-template-columns: auto;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "nav"
+      "aside"
+      "main "
+      "footer";
+  }
+  aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .producto-1{
+    min-width: 85vw;
+  }
+  .categorias{
+    display: flex;
+    flex-direction: row;
   }
 }
