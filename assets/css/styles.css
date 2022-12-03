@@ -47,6 +47,7 @@ footer {
   color: rgb(218, 224, 229);
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 footer p {
   padding: 2rem;
