@@ -30,6 +30,9 @@ aside p:hover {
   transform: scale(1.01);
   cursor: pointer;
 }
+aside h4{
+  margin-bottom: 1rem;
+}
 main {
   grid-area: main;
   min-height: 75vh;
